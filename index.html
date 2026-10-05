@@ -3,129 +3,558 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="NovaBarber - Barbería moderna con reservas online, precios y galería de trabajos." />
+
+  <meta
+    name="description"
+    content="NovaBarber - Barbería moderna. Cortes, barba, degradados y servicios de barbería con reserva online."
+  />
+
   <title>NovaBarber | Barbería</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
+
+  <!-- HEADER -->
   <header class="site-header">
     <nav class="navbar container" aria-label="Navegación principal">
+
       <a class="brand" href="#inicio" aria-label="Ir al inicio">
-        <img src="logo.png" alt="Logo NovaBarber" class="brand__logo" onerror="this.style.display='none'" />
+        <img
+          src="logo.png"
+          alt="Logo NovaBarber"
+          class="brand__logo"
+          onerror="this.style.display='none'"
+        />
+
         <span class="brand__text">NovaBarber</span>
       </a>
 
-      <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+      >
         <span></span>
         <span></span>
         <span></span>
       </button>
 
       <div class="nav-links">
-        <a href="#precios">Precios</a>
+        <a href="#precios">Servicios</a>
         <a href="#trabajos">Trabajos</a>
-        <a class="btn btn--small" href="https://www.picktime.com/c4827804-0108-468a-b08c-15134b95bd35#book/services" target="_blank" rel="noopener noreferrer">Reservar</a>
+
+        <a
+          class="btn btn--small"
+          href="https://www.picktime.com/novabarber"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Reservar
+        </a>
       </div>
+
     </nav>
   </header>
 
+
   <main>
+
+    <!-- HERO -->
     <section id="inicio" class="hero">
+
       <div class="container hero__grid">
+
         <div class="hero__content">
-          <p class="eyebrow">Barbería moderna</p>
-          <h1>Tu corte, tu estilo, tu momento.</h1>
+
+          <p class="eyebrow">BARBERÍA MODERNA</p>
+
+          <h1>
+            Tu corte.
+            <span>Tu estilo.</span>
+            Tu momento.
+          </h1>
+
           <p class="hero__description">
-            En NovaBarber hacemos cortes limpios, arreglos de barba y cambios de look con acabado profesional.
+            Cortes, degradados, barba y arreglos con un acabado limpio y profesional.
+            Reserva tu cita online en NovaBarber.
           </p>
+
           <div class="hero__actions">
-            <a class="btn" href="https://www.picktime.com/c4827804-0108-468a-b08c-15134b95bd35#book/services" target="_blank" rel="noopener noreferrer">Reservar cita</a>
-            <a class="btn btn--ghost" href="#precios">Ver precios</a>
+
+            <a
+              class="btn"
+              href="https://www.picktime.com/novabarber"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Reservar cita
+            </a>
+
+            <a class="btn btn--ghost" href="#precios">
+              Ver servicios
+            </a>
+
           </div>
+
         </div>
 
-        <div class="hero__card" aria-label="Resumen de servicios">
-          <div class="hero__badge">NovaBarber</div>
-          <h2>Servicios rápidos</h2>
+
+        <div class="hero__card">
+
+          <div class="hero__badge">
+            NOVABARBER
+          </div>
+
+          <h2>Servicios destacados</h2>
+
           <ul>
-            <li><span>Corte pelo</span><strong>5€</strong></li>
-            <li><span>Corte barba</span><strong>3€</strong></li>
-            <li><span>Pelo + barba</span><strong>6.50€</strong></li>
+
+            <li>
+              <span>Corte de pelo</span>
+              <strong>5€</strong>
+            </li>
+
+            <li>
+              <span>Degradado</span>
+              <strong>6€</strong>
+            </li>
+
+            <li>
+              <span>Corte + barba</span>
+              <strong>7€</strong>
+            </li>
+
+            <li>
+              <span>Barba</span>
+              <strong>3€</strong>
+            </li>
+
           </ul>
+
+          <a
+            class="hero__card-link"
+            href="https://www.picktime.com/novabarber"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Reservar ahora →
+          </a>
+
         </div>
+
       </div>
+
     </section>
 
+
+    <!-- SERVICIOS -->
     <section id="precios" class="section">
+
       <div class="container">
+
         <div class="section-heading">
-          <p class="eyebrow">Tarifas</p>
+
+          <p class="eyebrow">SERVICIOS</p>
+
           <h2>Precios NovaBarber</h2>
-          <p>Servicios claros, sin líos y con reserva online.</p>
+
+          <p>
+            Elige el servicio que necesitas y reserva tu cita online.
+          </p>
+
+        </div>
+
+
+        <!-- CORTES -->
+        <div class="category-heading">
+          <h3>✂️ Cortes</h3>
         </div>
 
         <div class="pricing-grid">
-          <article class="price-card">
-            <h3>Corte pelo</h3>
-            <p>Corte clásico, moderno o degradado.</p>
-            <strong>5€</strong>
-          </article>
 
           <article class="price-card">
-            <h3>Corte barba</h3>
-            <p>Perfilado y arreglo de barba.</p>
-            <strong>3€</strong>
+            <h3>Corte de Pelo</h3>
+            <p>Corte clásico, moderno o degradado.</p>
+            <div class="price">5€</div>
+            <span class="duration">30 min</span>
           </article>
+
+
+          <article class="price-card">
+            <h3>Corte con Degradado</h3>
+            <p>Degradado limpio y personalizado.</p>
+            <div class="price">6€</div>
+            <span class="duration">30 min</span>
+          </article>
+
+
+          <article class="price-card">
+            <h3>Corte + Lavado</h3>
+            <p>Corte acompañado de lavado de pelo.</p>
+            <div class="price">6€</div>
+            <span class="duration">40 min</span>
+          </article>
+
+
+          <article class="price-card">
+            <h3>Corte Infantil</h3>
+            <p>Corte adaptado para los más pequeños.</p>
+            <div class="price">4€</div>
+            <span class="duration">25 min</span>
+          </article>
+
+
+          <article class="price-card">
+            <h3>Corte + Diseño</h3>
+            <p>Corte con líneas o diseño personalizado.</p>
+            <div class="price">7€</div>
+            <span class="duration">40 min</span>
+          </article>
+
+        </div>
+
+
+        <!-- BARBA -->
+        <div class="category-heading">
+          <h3>🧔 Barba</h3>
+        </div>
+
+        <div class="pricing-grid">
+
+          <article class="price-card">
+            <h3>Corte de Barba</h3>
+            <p>Arreglo y recorte de barba.</p>
+            <div class="price">3€</div>
+            <span class="duration">20 min</span>
+          </article>
+
+
+          <article class="price-card">
+            <h3>Perfilado de Barba</h3>
+            <p>Perfilado preciso para definir tu barba.</p>
+            <div class="price">3,50€</div>
+            <span class="duration">20 min</span>
+          </article>
+
+
+          <article class="price-card">
+            <h3>Barba Completa</h3>
+            <p>Recorte y acabado completo.</p>
+            <div class="price">4€</div>
+            <span class="duration">30 min</span>
+          </article>
+
+
+          <article class="price-card">
+            <h3>Barba + Perfilado</h3>
+            <p>Recorte y perfilado profesional.</p>
+            <div class="price">4,50€</div>
+            <span class="duration">30 min</span>
+          </article>
+
+        </div>
+
+
+        <!-- COMBOS -->
+        <div class="category-heading">
+          <h3>🔥 Combos</h3>
+        </div>
+
+        <div class="pricing-grid">
 
           <article class="price-card price-card--featured">
-            <span>Más pedido</span>
-            <h3>Pelo + Barba</h3>
-            <p>Servicio completo para salir perfecto.</p>
-            <strong>6.50€</strong>
+
+            <span class="price-card__tag">
+              MÁS PEDIDO
+            </span>
+
+            <h3>Corte + Barba</h3>
+
+            <p>
+              Corte de pelo y arreglo completo de barba.
+            </p>
+
+            <div class="price">
+              7€
+            </div>
+
+            <span class="duration">
+              45 min
+            </span>
+
           </article>
+
+
+          <article class="price-card">
+
+            <h3>Corte + Degradado + Barba</h3>
+
+            <p>
+              Degradado personalizado junto con arreglo de barba.
+            </p>
+
+            <div class="price">
+              8€
+            </div>
+
+            <span class="duration">
+              50 min
+            </span>
+
+          </article>
+
+
+          <article class="price-card">
+
+            <h3>Corte + Lavado + Barba</h3>
+
+            <p>
+              Servicio completo con lavado y barba.
+            </p>
+
+            <div class="price">
+              8€
+            </div>
+
+            <span class="duration">
+              60 min
+            </span>
+
+          </article>
+
+
+          <article class="price-card">
+
+            <h3>Corte + Diseño + Barba</h3>
+
+            <p>
+              Corte, diseño personalizado y barba.
+            </p>
+
+            <div class="price">
+              9€
+            </div>
+
+            <span class="duration">
+              60 min
+            </span>
+
+          </article>
+
         </div>
+
+
+        <!-- EXTRAS -->
+        <div class="category-heading">
+          <h3>✨ Extras</h3>
+        </div>
+
+        <div class="pricing-grid">
+
+          <article class="price-card">
+            <h3>Diseño de Líneas</h3>
+            <p>Diseño adicional para completar tu corte.</p>
+            <div class="price">1€</div>
+            <span class="duration">10 min</span>
+          </article>
+
+
+          <article class="price-card">
+            <h3>Cejas</h3>
+            <p>Arreglo y definición de cejas.</p>
+            <div class="price">1,50€</div>
+            <span class="duration">10 min</span>
+          </article>
+
+
+          <article class="price-card">
+            <h3>Perfilado de Patillas</h3>
+            <p>Repaso y definición de patillas.</p>
+            <div class="price">1€</div>
+            <span class="duration">10 min</span>
+          </article>
+
+
+          <article class="price-card">
+            <h3>Lavado de Pelo</h3>
+            <p>Lavado antes o después del servicio.</p>
+            <div class="price">1,50€</div>
+            <span class="duration">10 min</span>
+          </article>
+
+
+          <article class="price-card">
+            <h3>Arreglo de Contornos</h3>
+            <p>Repaso de contornos para mantener el corte.</p>
+            <div class="price">1,50€</div>
+            <span class="duration">10 min</span>
+          </article>
+
+        </div>
+
+
+        <div class="services-cta">
+
+          <h3>¿Ya sabes qué quieres?</h3>
+
+          <p>
+            Reserva tu cita en unos segundos.
+          </p>
+
+          <a
+            class="btn"
+            href="https://www.picktime.com/novabarber"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Reservar cita
+          </a>
+
+        </div>
+
       </div>
+
     </section>
 
+
+    <!-- TRABAJOS -->
     <section id="trabajos" class="section section--dark">
+
       <div class="container">
+
         <div class="section-heading">
-          <p class="eyebrow">Galería</p>
-          <h2>Vídeos de trabajos</h2>
-          <p>Vídeos organizados por categoría para enseñar los resultados de NovaBarber.</p>
+
+          <p class="eyebrow">
+            GALERÍA
+          </p>
+
+          <h2>
+            Trabajos NovaBarber
+          </h2>
+
+          <p>
+            Descubre nuestros cortes, barbas y combinaciones.
+          </p>
+
         </div>
 
-        <div class="filters" role="group" aria-label="Filtrar trabajos">
-          <button class="filter-btn active" type="button" data-filter="todos">Todos</button>
-          <button class="filter-btn" type="button" data-filter="corte">Cortes</button>
-          <button class="filter-btn" type="button" data-filter="barba">Barbas</button>
-          <button class="filter-btn" type="button" data-filter="combo">Pelo + Barba</button>
+
+        <div
+          class="filters"
+          role="group"
+          aria-label="Filtrar trabajos"
+        >
+
+          <button
+            class="filter-btn active"
+            type="button"
+            data-filter="todos"
+          >
+            Todos
+          </button>
+
+          <button
+            class="filter-btn"
+            type="button"
+            data-filter="corte"
+          >
+            Cortes
+          </button>
+
+          <button
+            class="filter-btn"
+            type="button"
+            data-filter="barba"
+          >
+            Barbas
+          </button>
+
+          <button
+            class="filter-btn"
+            type="button"
+            data-filter="combo"
+          >
+            Pelo + Barba
+          </button>
+
         </div>
 
-        <div id="gallery" class="gallery" aria-live="polite"></div>
+
+        <div
+          id="gallery"
+          class="gallery"
+          aria-live="polite"
+        ></div>
+
       </div>
+
     </section>
 
 
+    <!-- CTA -->
     <section class="cta">
+
       <div class="container cta__content">
-        <h2>Reserva tu cita en NovaBarber</h2>
-        <p>Elige el servicio, la hora y ven listo para tu nuevo look.</p>
-        <a class="btn btn--light" href="https://www.picktime.com/c4827804-0108-468a-b08c-15134b95bd35#book/services" target="_blank" rel="noopener noreferrer">Reservar ahora</a>
+
+        <p class="eyebrow">
+          NOVABARBER
+        </p>
+
+        <h2>
+          ¿Listo para tu próximo corte?
+        </h2>
+
+        <p>
+          Elige tu servicio, selecciona tu horario y reserva online.
+        </p>
+
+        <a
+          class="btn btn--light"
+          href="https://www.picktime.com/novabarber"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Reservar ahora
+        </a>
+
       </div>
+
     </section>
+
   </main>
 
+
+  <!-- FOOTER -->
   <footer class="footer">
+
     <div class="container footer__content">
-      <strong>NovaBarber</strong>
-      <span>© <span id="year"></span> Todos los derechos reservados.</span>
+
+      <div>
+        <strong>NovaBarber</strong>
+        <span>Barbería moderna</span>
+      </div>
+
+      <span>
+        © <span id="year"></span> NovaBarber
+      </span>
+
     </div>
+
   </footer>
 
+
   <script src="script.js"></script>
+
 </body>
 </html>
